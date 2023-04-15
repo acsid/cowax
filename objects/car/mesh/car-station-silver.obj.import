@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-station-silver.obj-c911726e9b37e8f3a2f192215873219a.mesh"
+
+[deps]
+
+files=[ "res://.import/car-station-silver.obj-c911726e9b37e8f3a2f192215873219a.mesh" ]
+
+source_file="res://objects/car/mesh/car-station-silver.obj"
+dest_files=[ "res://.import/car-station-silver.obj-c911726e9b37e8f3a2f192215873219a.mesh", "res://.import/car-station-silver.obj-c911726e9b37e8f3a2f192215873219a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

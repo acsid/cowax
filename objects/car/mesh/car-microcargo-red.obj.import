@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-microcargo-red.obj-6e259ec422defe3f8ec1c8c2ad5902ed.mesh"
+
+[deps]
+
+files=[ "res://.import/car-microcargo-red.obj-6e259ec422defe3f8ec1c8c2ad5902ed.mesh" ]
+
+source_file="res://objects/car/mesh/car-microcargo-red.obj"
+dest_files=[ "res://.import/car-microcargo-red.obj-6e259ec422defe3f8ec1c8c2ad5902ed.mesh", "res://.import/car-microcargo-red.obj-6e259ec422defe3f8ec1c8c2ad5902ed.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

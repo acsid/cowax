@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-pickup-small-blue.obj-81e26517538860a822c00d8cb962e84e.mesh"
+
+[deps]
+
+files=[ "res://.import/car-pickup-small-blue.obj-81e26517538860a822c00d8cb962e84e.mesh" ]
+
+source_file="res://objects/car/mesh/car-pickup-small-blue.obj"
+dest_files=[ "res://.import/car-pickup-small-blue.obj-81e26517538860a822c00d8cb962e84e.mesh", "res://.import/car-pickup-small-blue.obj-81e26517538860a822c00d8cb962e84e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

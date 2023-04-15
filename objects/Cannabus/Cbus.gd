@@ -6,12 +6,11 @@ const STEER_LIMIT = 0.4
 
 export var engine_force_value = 700
 
-var throttle = 0
-
+var throttle = 150
+var speed = 0
 var steer = 0
 var steer_target = 0
 
-var speed = 0
 
 var aPilot = true
 
@@ -36,7 +35,7 @@ func _physics_process(delta):
 
 	if Input.is_action_pressed("ui_up"):
 		# Increase engine force at low speeds to make the initial acceleration faster.
-		var speed = linear_velocity.length()
+		speed = linear_velocity.length()
 		if speed < 5 and speed != 0:
 			engine_force = clamp(engine_force_value * 5 / speed, 0, 100)
 		else:
@@ -48,7 +47,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_down"):
 		# Increase engine force at low speeds to make the initial acceleration faster.
 		if fwd_mps >= -1:
-			var speed = linear_velocity.length()
+			speed = linear_velocity.length()
 			if speed < 5 and speed != 0:
 				engine_force = -clamp(engine_force_value * 5 / speed, 0, 100)
 			else:
@@ -59,6 +58,7 @@ func _physics_process(delta):
 		brake = 0.0
 
 	steering = move_toward(steering, steer_target, STEER_SPEED * delta)
+
 	#look_at(get_tree().get_current_scene().get_node("Generator").translation,Vector3.UP)
 
 		

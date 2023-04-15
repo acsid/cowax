@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-mpv-citrus.obj-3c932a382c70fab0d69e62bb5a26a18c.mesh"
+
+[deps]
+
+files=[ "res://.import/car-mpv-citrus.obj-3c932a382c70fab0d69e62bb5a26a18c.mesh" ]
+
+source_file="res://objects/car/mesh/car-mpv-citrus.obj"
+dest_files=[ "res://.import/car-mpv-citrus.obj-3c932a382c70fab0d69e62bb5a26a18c.mesh", "res://.import/car-mpv-citrus.obj-3c932a382c70fab0d69e62bb5a26a18c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

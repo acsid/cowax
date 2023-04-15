@@ -16,7 +16,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if objs < obj:
+	if objs > obj:
 		obj += 1
 		var type = Cowax.rng.randi_range(0,1)
 		if type == 0:

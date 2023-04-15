@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-hatchback-blue.obj-498f7a24a60ad52e7f06132cf9796388.mesh"
+
+[deps]
+
+files=[ "res://.import/car-hatchback-blue.obj-498f7a24a60ad52e7f06132cf9796388.mesh" ]
+
+source_file="res://objects/car/mesh/car-hatchback-blue.obj"
+dest_files=[ "res://.import/car-hatchback-blue.obj-498f7a24a60ad52e7f06132cf9796388.mesh", "res://.import/car-hatchback-blue.obj-498f7a24a60ad52e7f06132cf9796388.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

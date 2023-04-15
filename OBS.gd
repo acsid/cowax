@@ -6,7 +6,7 @@ extends Node
 # var b = "text"
 
 
-var OBSpassword = "OLwRAL9xKaFWdzds"
+var OBSpassword = "CfuIATNFWTBjsvIY"
 var OBSurl = "ws://127.0.0.1:4455"
 
 
@@ -48,7 +48,7 @@ func _WS_connected(proto = ""):
 func _WS_data():
 	var packet= _WS.get_peer(1).get_packet()
 	var parsed_data = JSON.parse(packet.get_string_from_utf8()).result
-	print(parsed_data)
+	#print(parsed_data)
 	_OBS_parse(parsed_data)
 	
 func _OBS_parse(data):

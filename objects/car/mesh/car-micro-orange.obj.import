@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-micro-orange.obj-c5f0772b760f9b946862f52eb9d15232.mesh"
+
+[deps]
+
+files=[ "res://.import/car-micro-orange.obj-c5f0772b760f9b946862f52eb9d15232.mesh" ]
+
+source_file="res://objects/car/mesh/car-micro-orange.obj"
+dest_files=[ "res://.import/car-micro-orange.obj-c5f0772b760f9b946862f52eb9d15232.mesh", "res://.import/car-micro-orange.obj-c5f0772b760f9b946862f52eb9d15232.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

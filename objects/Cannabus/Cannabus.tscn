@@ -207,6 +207,7 @@ transform = Transform( 1, 0, 0, 0, 0.986805, 0.161914, 0, -0.161914, 0.986805, 0
 transform = Transform( 0.000977353, 0, 1, 0, 1, 0, -1, 0, 0.000977353, 10.8176, 0.862719, -1.23373 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.26783, 5.03899 )
 stream = ExtResource( 11 )
 autoplay = true
 
