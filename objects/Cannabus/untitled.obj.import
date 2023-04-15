@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/untitled.obj-6f66016b7395beebeda2bacac3c6b31a.mesh"
+
+[deps]
+
+files=[ "res://.import/untitled.obj-6f66016b7395beebeda2bacac3c6b31a.mesh" ]
+
+source_file="res://objects/Cannabus/untitled.obj"
+dest_files=[ "res://.import/untitled.obj-6f66016b7395beebeda2bacac3c6b31a.mesh", "res://.import/untitled.obj-6f66016b7395beebeda2bacac3c6b31a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

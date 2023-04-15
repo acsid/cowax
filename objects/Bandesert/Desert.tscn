@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://objects/Bandesert/Desert.gd" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 16, 1, 128 )
+
+[sub_resource type="VisualShaderNodeColorConstant" id=2]
+constant = Color( 0.910847, 0.930938, 0.0125095, 1 )
+
+[sub_resource type="VisualShader" id=3]
+code = "shader_type spatial;
+render_mode specular_schlick_ggx, async_visible;
+
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Color:2
+	vec3 n_out2p0 = vec3(0.910847, 0.930938, 0.012509);
+	float n_out2p1 = 1.000000;
+
+// Output:0
+	ALBEDO = n_out2p0;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( -435.531, 97.9134 )
+nodes/fragment/2/node = SubResource( 2 )
+nodes/fragment/2/position = Vector2( -366.525, 289.315 )
+nodes/fragment/connections = PoolIntArray( 2, 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+
+[node name="desert" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.626961, 0 )
+script = ExtResource( 1 )
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72 )
+mesh = SubResource( 1 )
+material = SubResource( 4 )

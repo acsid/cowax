@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 1, 1, 1 )
+
+[sub_resource type="VisualShaderNodeColorConstant" id=2]
+constant = Color( 0.151614, 0.824063, 0.0157085, 1 )
+
+[sub_resource type="VisualShader" id=3]
+code = "shader_type spatial;
+render_mode specular_schlick_ggx, async_visible;
+
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Color:2
+	vec3 n_out2p0 = vec3(0.151614, 0.824063, 0.015709);
+	float n_out2p1 = 1.000000;
+
+// Output:0
+	ALBEDO = n_out2p0;
+	ALPHA = n_out2p1;
+	NORMAL = n_out2p0;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( -264.672, -20.68 )
+nodes/fragment/2/node = SubResource( 2 )
+nodes/fragment/2/position = Vector2( 233.752, 226.541 )
+nodes/fragment/connections = PoolIntArray( 2, 0, 0, 7, 2, 0, 0, 0, 2, 1, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+
+[node name="default" type="Spatial"]
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 16, 0, 0, 0, 1, 0, 0, 0, 128, 0, 0.464977, -72.1863 )
+mesh = SubResource( 1 )
+material = SubResource( 4 )

@@ -1,0 +1,219 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://objects/roue.png" type="Texture" id=1]
+[ext_resource path="res://objects/sideview.png" type="Texture" id=2]
+[ext_resource path="res://objects/Cannabus/Cbus.gd" type="Script" id=3]
+[ext_resource path="res://CamBase.tscn" type="PackedScene" id=4]
+[ext_resource path="res://objects/Cannabus/busdevant.png" type="Texture" id=5]
+[ext_resource path="res://objects/Cannabus/untitled.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://objects/smoke1.png" type="Texture" id=7]
+[ext_resource path="res://Obs_camera.gd" type="Script" id=8]
+[ext_resource path="res://objects/Cannabus/Particles.gd" type="Script" id=9]
+[ext_resource path="res://Minigame.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objects/Cannabus/sons/loop_0.wav" type="AudioStream" id=11]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 2, 2, 6 )
+
+[sub_resource type="CylinderMesh" id=2]
+top_radius = 1.2
+bottom_radius = 1.2
+height = 0.5
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.647059, 0.627451, 0.627451, 1 )
+
+[sub_resource type="Gradient" id=7]
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 7 )
+
+[sub_resource type="ParticlesMaterial" id=4]
+trail_color_modifier = SubResource( 8 )
+emission_shape = 1
+emission_sphere_radius = 1.0
+spread = 91.45
+gravity = Vector3( 10, 10, 0 )
+
+[sub_resource type="SpatialMaterial" id=5]
+flags_transparent = true
+flags_use_shadow_to_opacity = true
+albedo_texture = ExtResource( 7 )
+
+[sub_resource type="QuadMesh" id=6]
+material = SubResource( 5 )
+
+[node name="Cannabus" type="Spatial" groups=["cbus"]]
+
+[node name="Cbus" type="VehicleBody" parent="." groups=["cbus"]]
+mass = 105.51
+can_sleep = false
+script = ExtResource( 3 )
+
+[node name="Camera4" type="Camera" parent="Cbus"]
+transform = Transform( -0.997473, 0, -0.0710448, 0, 1, 0, 0.0710448, 0, -0.997473, 0.220164, 0.268684, 5.02864 )
+
+[node name="Minigame" parent="Cbus" instance=ExtResource( 10 )]
+
+[node name="CollisionShape" type="CollisionShape" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.738733, 0 )
+shape = SubResource( 1 )
+
+[node name="body" type="Sprite3D" parent="Cbus"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.87558, 0, -1.33973 )
+double_sided = false
+texture = ExtResource( 2 )
+
+[node name="VehicleWheel2" type="VehicleWheel" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -3.26902, -6.56262 )
+use_as_traction = true
+wheel_radius = 1.2
+suspension_stiffness = 20.0
+
+[node name="Sprite3D" type="Sprite3D" parent="Cbus/VehicleWheel2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.0163627, 0 )
+texture = ExtResource( 1 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Cbus/VehicleWheel2"]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0.334829, 0, 0 )
+mesh = SubResource( 2 )
+material = SubResource( 3 )
+
+[node name="VehicleWheel3" type="VehicleWheel" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -3, 4.5 )
+use_as_traction = true
+use_as_steering = true
+wheel_radius = 1.2
+suspension_stiffness = 20.0
+
+[node name="Sprite3D" type="Sprite3D" parent="Cbus/VehicleWheel3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.0163627, 0 )
+texture = ExtResource( 1 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Cbus/VehicleWheel3"]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0.307147, 0, 0 )
+mesh = SubResource( 2 )
+material = SubResource( 3 )
+
+[node name="VehicleWheel4" type="VehicleWheel" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90026, -3.26902, -6.56262 )
+use_as_traction = true
+wheel_radius = 1.2
+suspension_stiffness = 20.0
+
+[node name="Sprite3D" type="Sprite3D" parent="Cbus/VehicleWheel4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.00969195, 0 )
+texture = ExtResource( 1 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Cbus/VehicleWheel4"]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.270494, 0, 0 )
+mesh = SubResource( 2 )
+material = SubResource( 3 )
+
+[node name="VehicleWheel5" type="VehicleWheel" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2.993, 4.5 )
+use_as_steering = true
+wheel_radius = 1.2
+suspension_stiffness = 20.0
+
+[node name="Sprite3D" type="Sprite3D" parent="Cbus/VehicleWheel5"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0136106, 0 )
+texture = ExtResource( 1 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Cbus/VehicleWheel5"]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.270494, 0, 0 )
+mesh = SubResource( 2 )
+material = SubResource( 3 )
+
+[node name="body_front" type="Sprite3D" parent="Cbus"]
+transform = Transform( 0.811788, 0.221855, 0.540168, -0.017862, 0.934021, -0.356773, -0.58368, 0.279975, 0.762189, 1.0987, -0.118833, 6.60938 )
+visible = false
+texture = ExtResource( 5 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Cbus"]
+transform = Transform( -9.61651e-08, 0, -2.2, 0, 2.2, 0, 2.2, 0, -9.61651e-08, 0, -0.497494, 1.24298 )
+visible = false
+mesh = ExtResource( 6 )
+
+[node name="CamBase" parent="Cbus" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, -3.55271e-15, 0, 5.96046e-08 )
+
+[node name="Particles" type="Particles" parent="Cbus"]
+transform = Transform( 0.143527, 0, 0.989646, 0, 1, 0, -0.989646, 0, 0.143527, 5.32994, 0.543833, -6.77335 )
+visible = false
+amount = 50
+process_material = SubResource( 4 )
+draw_pass_1 = SubResource( 6 )
+script = ExtResource( 9 )
+
+[node name="RayCast" type="RayCast" parent="Cbus"]
+transform = Transform( 0.999702, 0, -0.0243973, 0, 1, 0, 0.0243973, 0, 0.999702, 0, 1.08693, 2.94448 )
+enabled = true
+exclude_parent = false
+cast_to = Vector3( 0, 5, 0 )
+collide_with_areas = true
+
+[node name="Reset" type="Timer" parent="Cbus"]
+
+[node name="discord2" type="Position3D" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.85351, -0.0383036, -3.36633 )
+script = ExtResource( 8 )
+
+[node name="discord" type="Position3D" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55994, -0.0383036, -8.30706 )
+script = ExtResource( 8 )
+
+[node name="Camera_logi" type="Position3D" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09642, 0.508775, 1.52408 )
+script = ExtResource( 8 )
+
+[node name="Driver" type="Spatial" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0607834, 0, 6.10308 )
+
+[node name="Left1" type="RayCast" parent="Cbus/Driver"]
+enabled = true
+cast_to = Vector3( 5, 0, 5 )
+collide_with_areas = true
+
+[node name="Left2" type="RayCast" parent="Cbus/Driver"]
+enabled = true
+cast_to = Vector3( 5, 0, 0 )
+collide_with_areas = true
+
+[node name="Right1" type="RayCast" parent="Cbus/Driver"]
+enabled = true
+cast_to = Vector3( -5, 0, 5 )
+collide_with_areas = true
+
+[node name="Right2" type="RayCast" parent="Cbus/Driver"]
+enabled = true
+cast_to = Vector3( -5, 0, 0 )
+collide_with_areas = true
+
+[node name="Front" type="RayCast" parent="Cbus/Driver"]
+enabled = true
+cast_to = Vector3( 0, 0, 10 )
+collide_with_areas = true
+
+[node name="Camera" type="Camera" parent="Cbus"]
+transform = Transform( 0.862469, -0.142582, 0.48561, 0, 0.959496, 0.281722, -0.506109, -0.242977, 0.827536, 7.30236, 0.784357, 4.79503 )
+current = true
+
+[node name="Camera2" type="Camera" parent="Cbus"]
+transform = Transform( 1, 0, 0, 0, 0.986805, 0.161914, 0, -0.161914, 0.986805, 0.0366771, 1.27049, -2.47112 )
+
+[node name="Camera3" type="Camera" parent="Cbus"]
+transform = Transform( 0.000977353, 0, 1, 0, 1, 0, -1, 0, 0.000977353, 10.8176, 0.862719, -1.23373 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Cbus"]
+stream = ExtResource( 11 )
+autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Cbus/Reset" to="Cbus" method="_on_Reset_timeout"]
+[connection signal="finished" from="Cbus/AudioStreamPlayer3D" to="Cbus" method="_on_AudioStreamPlayer3D_finished"]
+[connection signal="timeout" from="Timer" to="Cbus" method="_on_Timer_timeout"]

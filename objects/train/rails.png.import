@@ -1,0 +1,25 @@
+[remap]
+
+importer="texture_3d"
+type="Texture3D"
+path="res://.import/rails.png-9398c04fbab1a77809d52b6faf8d861b.tex3d"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://objects/train/rails.png"
+dest_files=[ "res://.import/rails.png-9398c04fbab1a77809d52b6faf8d861b.tex3d" ]
+
+[params]
+
+compress/mode=2
+compress/no_bptc_if_rgb=false
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=1
+slices/horizontal=8
+slices/vertical=8

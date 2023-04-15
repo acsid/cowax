@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://themer.tres" type="Theme" id=1]
+[ext_resource path="res://overlay.gd" type="Script" id=2]
+
+[node name="overlay" type="Control"]
+anchor_top = 0.816
+anchor_right = 0.185
+anchor_bottom = 1.0
+margin_top = 158.72
+margin_right = -32.2
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_top = -3.492
+anchor_right = 1.031
+anchor_bottom = 1.0
+margin_top = 53.68
+margin_right = -0.0130005
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+anchor_top = -0.615
+anchor_bottom = 1.0
+margin_top = 81.49
+margin_right = 306.0
+margin_bottom = -6.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_right = 306.0
+margin_bottom = 31.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+margin_right = 60.0
+margin_bottom = 31.0
+theme = ExtResource( 1 )
+text = "THC:"
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel/VBoxContainer/HBoxContainer"]
+margin_left = 64.0
+margin_right = 251.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+max_value = 420.0
+value = 400.0
+allow_greater = true
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+margin_left = 255.0
+margin_right = 306.0
+margin_bottom = 31.0
+theme = ExtResource( 1 )
+text = "420"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 35.0
+margin_right = 306.0
+margin_bottom = 66.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer2"]
+margin_right = 120.0
+margin_bottom = 31.0
+theme = ExtResource( 1 )
+text = "Millage"
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer2"]
+margin_left = 124.0
+margin_right = 124.0
+margin_bottom = 31.0
+theme = ExtResource( 1 )

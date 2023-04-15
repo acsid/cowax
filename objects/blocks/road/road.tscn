@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://objects/blocks/road/ground_asphalt_synth_07.png" type="Texture" id=1]
+[ext_resource path="res://objects/blocks/road/road.gd" type="Script" id=2]
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 16, 1, 16 )
+
+[sub_resource type="VisualShaderNodeTexture" id=11]
+texture = ExtResource( 1 )
+texture_type = 1
+
+[sub_resource type="VisualShader" id=7]
+code = "shader_type spatial;
+render_mode specular_schlick_ggx, async_visible;
+
+uniform sampler2D tex_frg_2 : hint_albedo;
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Texture:2
+	vec4 tex_frg_2_read = texture(tex_frg_2, UV.xy);
+	vec3 n_out2p0 = tex_frg_2_read.rgb;
+	float n_out2p1 = tex_frg_2_read.a;
+
+// Output:0
+	ALBEDO = n_out2p0;
+	NORMAL = n_out2p0;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( -145.504, 450.572 )
+nodes/fragment/2/node = SubResource( 11 )
+nodes/fragment/2/position = Vector2( -60, 200 )
+nodes/fragment/connections = PoolIntArray( 2, 0, 0, 0, 2, 0, 0, 7 )
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = SubResource( 7 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 8, 0.56, 8 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 7.96919, 7.42678, 0.67319 )
+
+[sub_resource type="CubeMesh" id=10]
+size = Vector3( 16, 16, 2 )
+
+[node name="road" type="StaticBody"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.548667, 0 )
+script = ExtResource( 2 )
+
+[node name="Rue" type="CSGMesh" parent="."]
+mesh = SubResource( 3 )
+material = SubResource( 8 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, -4.31416e-08, 3.6676e-08, 4.31416e-08, 0.160949, -0.986963, 3.6676e-08, 0.986963, 0.160949, -1.41747e-08, 0.829925, 0.324279 )
+shape = SubResource( 9 )
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 1, -4.31841e-08, 3.69427e-08, 4.31841e-08, 0.154848, -0.987938, 3.69427e-08, 0.987938, 0.154848, 4.87834e-09, 0.415866, -0.111603 )
+mesh = SubResource( 10 )
