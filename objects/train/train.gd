@@ -25,3 +25,7 @@ func _physics_process(delta):
 func _on_Area_body_entered(body):
 	body.translation.y = 264
 
+
+
+func _on_AudioStreamPlayer3D_finished():
+	$AudioStreamPlayer3D.play()

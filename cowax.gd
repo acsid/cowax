@@ -29,7 +29,7 @@ func checkbiome():
 	biomelen -= 1
 	if biomelen == 0:
 		biomelen = 25
-		biome = rng.randi_range(0,3)
+		biome = rng.randi_range(0,4)
 		if biome == 3:
 			biomelen = 75
 		return biome

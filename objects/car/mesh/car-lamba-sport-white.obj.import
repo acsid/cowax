@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-lamba-sport-white.obj-4a6a81b102969ad631b032f8e4a902eb.mesh"
+
+[deps]
+
+files=[ "res://.import/car-lamba-sport-white.obj-4a6a81b102969ad631b032f8e4a902eb.mesh" ]
+
+source_file="res://objects/car/mesh/car-lamba-sport-white.obj"
+dest_files=[ "res://.import/car-lamba-sport-white.obj-4a6a81b102969ad631b032f8e4a902eb.mesh", "res://.import/car-lamba-sport-white.obj-4a6a81b102969ad631b032f8e4a902eb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

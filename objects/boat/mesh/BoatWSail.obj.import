@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BoatWSail.obj-7c4b96c704bf5ffbd2d7aa6b7f622651.mesh"
+
+[deps]
+
+files=[ "res://.import/BoatWSail.obj-7c4b96c704bf5ffbd2d7aa6b7f622651.mesh" ]
+
+source_file="res://objects/boat/mesh/BoatWSail.obj"
+dest_files=[ "res://.import/BoatWSail.obj-7c4b96c704bf5ffbd2d7aa6b7f622651.mesh", "res://.import/BoatWSail.obj-7c4b96c704bf5ffbd2d7aa6b7f622651.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

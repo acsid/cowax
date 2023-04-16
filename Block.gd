@@ -25,6 +25,8 @@ func _ready():
 		g = preload("res://objects/biome/strounfs/Biome.tscn")
 	elif biome == 3:
 		g = preload("res://objects/biome/desert/Biome.tscn")
+	elif biome == 4:
+		g = preload("res://objects/biome/Lac/Biome.tscn")
 	if trainchunk:
 		g = preload("res://objects/train/track.tscn")
 	var inst = g.instance()

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/car-parsche-sport-grey.obj-19f716f1a897777f4e94c3540fe846e9.mesh"
+
+[deps]
+
+files=[ "res://.import/car-parsche-sport-grey.obj-19f716f1a897777f4e94c3540fe846e9.mesh" ]
+
+source_file="res://objects/car/mesh/car-parsche-sport-grey.obj"
+dest_files=[ "res://.import/car-parsche-sport-grey.obj-19f716f1a897777f4e94c3540fe846e9.mesh", "res://.import/car-parsche-sport-grey.obj-19f716f1a897777f4e94c3540fe846e9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
