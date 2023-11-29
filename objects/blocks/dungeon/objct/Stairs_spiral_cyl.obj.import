@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Stairs_spiral_cyl.obj-db168f3ed7a05c53531a501d262a43cb.mesh"
+
+[deps]
+
+files=[ "res://.import/Stairs_spiral_cyl.obj-db168f3ed7a05c53531a501d262a43cb.mesh" ]
+
+source_file="res://objects/blocks/dungeon/objct/Stairs_spiral_cyl.obj"
+dest_files=[ "res://.import/Stairs_spiral_cyl.obj-db168f3ed7a05c53531a501d262a43cb.mesh", "res://.import/Stairs_spiral_cyl.obj-db168f3ed7a05c53531a501d262a43cb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

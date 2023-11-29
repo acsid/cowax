@@ -26,9 +26,15 @@ func _process(delta):
 					#Obs.set_sourceTransform("cbus_side",4,pos.x,pos.y,rot.z)
 					pass
 				elif name == "Camera_logi":
-					Obs.set_sourceTransform("cbus_side",2,pos.x,pos.y,rot.z)
+					Obs.set_sourceTransform("depanneur",5,pos.x,pos.y,rot.z)
+				elif name == "corp1":
+					Obs.set_sourceTransform("cbus_side",7,pos.x,pos.y,rot.z)
+				elif name == "corp2":
+					Obs.set_sourceTransform("cbus_side",8,pos.x,pos.y,rot.z)
+				elif name == "Flag":
+					Obs.set_sourceTransform("cbus_side",23,pos.x,pos.y,rot.z)
 				elif name == "discord":
-					Obs.set_sourceTransform("cbus_side",5,pos.x,pos.y,rot.z)
+					Obs.set_sourceTransform("cbus_side",6,pos.x,pos.y,rot.z)
 					pass
 				elif name == "discord2":
 					#Obs.set_sourceTransform("cbus_side",9,pos.x,pos.y,rot.z)
@@ -38,13 +44,25 @@ func _process(delta):
 					#Obs.set_sourceTransform("cbus_side",4,pos.x,pos.y,rot.z)
 					pass
 				elif name == "Camera_logi":
-					Obs.set_sourceTransform("cbus_side",2,pos.x,pos.y,rot.z)
-				elif name == "discord":
-					Obs.set_sourceTransform("cbus_side",5,pos.x,pos.y,rot.z)
-					pass
-				elif name == "discord2":
+					Obs.set_sourceTransform("cbus_side",7,pos.x,pos.y,rot.z)
+				elif name == "corp2":
+					Obs.set_sourceTransform("cbus_side",8,pos.x,pos.y,rot.z)
+				elif name == "corp1":
+					Obs.set_sourceTransform("cbus_side",7,pos.x,pos.y,rot.z)
+				elif name == "Flag":
+					Obs.set_sourceTransform("cbus_side",23,pos.x,pos.y,rot.z)
+				#elif name == "corp3":
+			#		Obs.set_sourceTransform("cbus_side",9,pos.x,pos.y,rot.z)
+				#elif name == "corp4":
+			#		Obs.set_sourceTransform("cbus_side",10,pos.x,pos.y,rot.z)
+				#elif name == "crop5":
+			#		Obs.set_sourceTransform("cbus_side",11,pos.x,pos.y,rot.z)
+			#	elif name == "discord":
+		#			Obs.set_sourceTransform("cbus_side",6,pos.x,pos.y,rot.z)
+		#			pass
+			#	elif name == "discord2":
 					#Obs.set_sourceTransform("cbus_side",9,pos.x,pos.y,rot.z)
-					pass
+			#		pass
 			if get_viewport().get_camera().name == "Camera2":
 				if name == "cam1":
 					#Obs.set_sourceTransform("cbus_side",4,pos.x,pos.y,rot.z)
@@ -52,7 +70,7 @@ func _process(delta):
 				elif name == "Camera_logi":
 					Obs.set_sourceTransform("cbus_side",3,pos.x,pos.y,rot.z)
 				elif name == "discord":
-					Obs.set_sourceTransform("cbus_side",5,pos.x,pos.y,rot.z)
+					Obs.set_sourceTransform("cbus_side",6,pos.x,pos.y,rot.z)
 					pass
 				elif name == "discord2":
 					#Obs.set_sourceTransform("cbus_side",9,pos.x,pos.y,rot.z)

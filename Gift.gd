@@ -38,5 +38,10 @@ func _ready() -> void:
 	add_command("jump", get_parent(),"jump")
 	add_command("ap", get_parent(),"ap")
 	add_command("train", get_parent(),"train")
+	add_command("g", get_parent(),"steer_g")
+	add_command("d", get_parent(),"steer_d")
+	add_command("respawn", get_parent(),"respawn")
 	#add_command("truite", get_parent(),"truite")
 	#add_command("wheelie", get_parent(),"wheelie")
+	
+	add_command("420", self, "command_420", 0, 0, PermissionFlag.NON_REGULAR)

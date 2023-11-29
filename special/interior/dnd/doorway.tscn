@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://special/interior/dnd/depwalldoor.png" type="Texture" id=1]
+[ext_resource path="res://special/interior/dnd/doorway.gd" type="Script" id=2]
+[ext_resource path="res://special/interior/dnd/porte.png" type="Texture" id=3]
+
+[node name="doorway" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.52462, 0, -0.272451 )
+alpha_cut = 2
+texture = ExtResource( 3 )
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform( -0.0352483, -4.36842e-08, -0.999378, -0.999379, 1.54075e-09, 0.0352483, 0, 1, -4.37114e-08, 2.13838, 1.48726, -0.272451 )
+alpha_cut = 2
+texture = ExtResource( 3 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+alpha_cut = 2
+texture = ExtResource( 1 )

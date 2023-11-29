@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Dirt_10111110.obj-d4e025dae36aa9f37e096291b818c368.mesh"
+
+[deps]
+
+files=[ "res://.import/Dirt_10111110.obj-d4e025dae36aa9f37e096291b818c368.mesh" ]
+
+source_file="res://objects/blocks/dungeon/objct/Dirt_10111110.obj"
+dest_files=[ "res://.import/Dirt_10111110.obj-d4e025dae36aa9f37e096291b818c368.mesh", "res://.import/Dirt_10111110.obj-d4e025dae36aa9f37e096291b818c368.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

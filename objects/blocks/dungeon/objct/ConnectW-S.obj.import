@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ConnectW-S.obj-9be0739337d6f3b1ac8342ccb0b333c4.mesh"
+
+[deps]
+
+files=[ "res://.import/ConnectW-S.obj-9be0739337d6f3b1ac8342ccb0b333c4.mesh" ]
+
+source_file="res://objects/blocks/dungeon/objct/ConnectW-S.obj"
+dest_files=[ "res://.import/ConnectW-S.obj-9be0739337d6f3b1ac8342ccb0b333c4.mesh", "res://.import/ConnectW-S.obj-9be0739337d6f3b1ac8342ccb0b333c4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

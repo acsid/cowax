@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Water_11101000.obj-f8e48f0d978e0fc2d5554f8fdc6c9593.mesh"
+
+[deps]
+
+files=[ "res://.import/Water_11101000.obj-f8e48f0d978e0fc2d5554f8fdc6c9593.mesh" ]
+
+source_file="res://objects/blocks/dungeon/objct/Water_11101000.obj"
+dest_files=[ "res://.import/Water_11101000.obj-f8e48f0d978e0fc2d5554f8fdc6c9593.mesh", "res://.import/Water_11101000.obj-f8e48f0d978e0fc2d5554f8fdc6c9593.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -44,7 +44,20 @@ func _process(delta):
 func newChunk():
 	b = 0
 
+var thread
+func _threadChunker():
+	b = 0
+	while b < chunkSize:
+		newBlock()
+		b += 1
+
+func _exit_tree():
+	thread.wait_to_finish()
+
 func _on_Area_body_entered(body):
 	if body.is_in_group("cbus"):
-		newChunk()
+		thread = Thread.new()
+		thread.start(self,"_threadChunker")
+		
+		#newChunk()
 	#print("Generator Triggered")

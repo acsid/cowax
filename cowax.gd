@@ -13,12 +13,17 @@ func _ready():
 	rng.randomize()
 	pass # Replace with function body.
 
+var speed = 0
 
 var blocksize = 16 
-
+var steer = 0
 var biomelen = 25
 var biome = 0
 var millage = 1700000
+
+var go = false
+var flat = false
+
 
 func get_miles():
 	var ret = millage/16/100

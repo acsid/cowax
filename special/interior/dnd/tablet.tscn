@@ -1,0 +1,183 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://special/interior/dnd/dep_tablet.png" type="Texture" id=1]
+[ext_resource path="res://special/interior/dnd/can.tscn" type="PackedScene" id=2]
+
+[node name="tablet" type="Spatial"]
+
+[node name="can" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27932, -0.0759819, 0.0359731 )
+
+[node name="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29021, 1.21639, 0 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32397, 2.53413, 0 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33047, 3.79929, 0 )
+
+[node name="Spatial4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2946, 5.0587, 0 )
+
+[node name="Spatial5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29021, -5.13796, 0 )
+
+[node name="Spatial6" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32397, -3.82022, 0 )
+
+[node name="Spatial7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33047, -2.55506, 0 )
+
+[node name="Spatial8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2946, -1.29565, 0 )
+
+[node name="can3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11039, -0.0759819, 0.0359731 )
+
+[node name="Spatial17" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12129, 1.21639, 0 )
+
+[node name="Spatial18" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15504, 2.53413, 0 )
+
+[node name="Spatial19" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16154, 3.79929, 0 )
+
+[node name="Spatial20" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12567, 5.0587, 0 )
+
+[node name="Spatial21" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12129, -5.13796, 0 )
+
+[node name="Spatial22" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15504, -3.82022, 0 )
+
+[node name="Spatial23" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16154, -2.55506, 0 )
+
+[node name="Spatial24" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12567, -1.29565, 0 )
+
+[node name="can4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0436616, -0.0759819, 0.0359731 )
+
+[node name="Spatial25" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0327647, 1.21639, 0 )
+
+[node name="Spatial26" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000987768, 2.53413, 0 )
+
+[node name="Spatial27" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00748968, 3.79929, 0 )
+
+[node name="Spatial28" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0283799, 5.0587, 0 )
+
+[node name="Spatial29" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0327647, -5.13796, 0 )
+
+[node name="Spatial30" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000987768, -3.82022, 0 )
+
+[node name="Spatial31" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00748968, -2.55506, 0 )
+
+[node name="Spatial32" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0283799, -1.29565, 0 )
+
+[node name="can2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27932, -0.0759819, -1.89149 )
+
+[node name="Spatial9" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29021, 1.21639, -1.92746 )
+
+[node name="Spatial10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32397, 2.53413, -1.92746 )
+
+[node name="Spatial11" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33047, 3.79929, -1.92746 )
+
+[node name="Spatial12" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2946, 5.0587, -1.92746 )
+
+[node name="Spatial33" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10318, 5.0587, -1.92746 )
+
+[node name="Spatial34" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12857, 5.0587, -1.92746 )
+
+[node name="Spatial13" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29021, -5.13796, -1.92746 )
+
+[node name="Spatial35" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.956878, -5.13796, -1.92746 )
+
+[node name="Spatial36" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.244828, -5.13796, -1.92746 )
+
+[node name="Spatial14" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32397, -3.82022, -1.92746 )
+
+[node name="Spatial15" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33047, -2.55506, -1.92746 )
+
+[node name="Spatial16" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2946, -1.29565, -1.92746 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+layers = 4
+alpha_cut = 2
+texture = ExtResource( 1 )
+
+[node name="can5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27932, -0.0759819, -4.14253 )
+
+[node name="Spatial37" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29021, 1.21639, -4.1785 )
+
+[node name="Spatial38" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32397, 2.53413, -4.1785 )
+
+[node name="Spatial39" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33047, 3.79929, -4.1785 )
+
+[node name="Spatial40" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2946, 5.0587, -4.1785 )
+
+[node name="Spatial41" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10318, 5.0587, -4.1785 )
+
+[node name="Spatial42" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12857, 5.0587, -4.1785 )
+
+[node name="Spatial43" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29021, -5.13796, -4.1785 )
+
+[node name="Spatial44" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.956878, -5.13796, -4.1785 )
+
+[node name="Spatial45" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.244828, -5.13796, -4.1785 )
+
+[node name="Spatial46" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32397, -3.82022, -4.1785 )
+
+[node name="Spatial47" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33047, -2.55506, -4.1785 )
+
+[node name="Spatial48" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2946, -1.29565, -4.1785 )
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.25104 )
+layers = 4
+alpha_cut = 2
+texture = ExtResource( 1 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+layers = 4
+sorting_offset = 6.0
+alpha_cut = 2
+texture = ExtResource( 1 )

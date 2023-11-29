@@ -1,19 +1,24 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Block.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generator.tscn" type="PackedScene" id=2]
-[ext_resource path="res://objects/Cannabus/Cannabus.tscn" type="PackedScene" id=3]
+[ext_resource path="res://default_env.tres" type="Environment" id=3]
 [ext_resource path="res://Gift.gd" type="Script" id=4]
 [ext_resource path="res://World.gd" type="Script" id=5]
 [ext_resource path="res://objects/car/car.tscn" type="PackedScene" id=6]
 [ext_resource path="res://overlay.tscn" type="PackedScene" id=7]
 [ext_resource path="res://objects/train/track.tscn" type="PackedScene" id=8]
+[ext_resource path="res://objects/Cannabus/Cannabus.tscn" type="PackedScene" id=9]
+[ext_resource path="res://special/interior/dnd/dungeon.tscn" type="PackedScene" id=10]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 1, 16.4965, 126.089 )
 
 [node name="World" type="Spatial"]
 script = ExtResource( 5 )
+
+[node name="Cannabus" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 17.3676, 0 )
 
 [node name="Block" parent="." instance=ExtResource( 1 )]
 
@@ -22,15 +27,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.9343, 0.418831, -8.0854 )
 
 [node name="Generator" parent="." instance=ExtResource( 2 )]
 
+[node name="dungeon" parent="." instance=ExtResource( 10 )]
+transform = Transform( 0.999535, -0.0282185, -0.011529, 0.0112621, -0.0095958, 0.99989, -0.028326, -0.999556, -0.00927354, 13.156, 7.01575, 95.7532 )
+
 [node name="car" parent="." instance=ExtResource( 6 )]
-transform = Transform( 0.986435, 0, 0.164152, 0, 1, 0, -0.164152, 0, 0.986435, 8, 6, 12.0598 )
+transform = Transform( 0.999535, -0.0282185, -0.011529, 0.0112621, -0.0095958, 0.99989, -0.028326, -0.999556, -0.00927354, 22.9786, -40.3309, 90.9287 )
 
 [node name="Gift" type="Node" parent="."]
 script = ExtResource( 4 )
 get_images = true
-
-[node name="Spatial" parent="." instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 12, 4.81093 )
 
 [node name="overlay" parent="." instance=ExtResource( 7 )]
 margin_right = 330.0
@@ -41,3 +46,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6811, 0, 0 )
 [node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.63162, 15.5881, 0 )
 shape = SubResource( 1 )
+
+[node name="chateau" type="Spatial" parent="."]
+transform = Transform( 0.692257, 0, -0.721651, 0, 1, 0, 0.721651, 0, 0.692257, 89.1599, 13.1452, 159.369 )
+visible = false
+
+[node name="Camera" type="Camera" parent="chateau"]
+transform = Transform( 0.99335, -0.114956, -0.00637895, 0.114956, 0.987231, 0.110273, -0.00637904, -0.110273, 0.993881, 0, 13.6515, 0 )
+visible = false
+environment = ExtResource( 3 )
+far = 8192.0

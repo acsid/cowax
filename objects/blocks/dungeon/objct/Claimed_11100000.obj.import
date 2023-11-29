@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Claimed_11100000.obj-cf5181276b309822a1a93e5b42009fe4.mesh"
+
+[deps]
+
+files=[ "res://.import/Claimed_11100000.obj-cf5181276b309822a1a93e5b42009fe4.mesh" ]
+
+source_file="res://objects/blocks/dungeon/objct/Claimed_11100000.obj"
+dest_files=[ "res://.import/Claimed_11100000.obj-cf5181276b309822a1a93e5b42009fe4.mesh", "res://.import/Claimed_11100000.obj-cf5181276b309822a1a93e5b42009fe4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

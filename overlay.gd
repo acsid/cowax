@@ -16,4 +16,5 @@ func _process(delta):
 	$Panel/VBoxContainer/HBoxContainer/ProgressBar.value = Cowax.thc
 	$Panel/VBoxContainer/HBoxContainer/Label2.text = String(Cowax.thc)
 	$Panel/VBoxContainer/HBoxContainer2/Label2.text = String(Cowax.get_miles())
+	$Panel/VBoxContainer/HBoxContainer3/Label2.text = String(Cowax.speed)
 #	pass

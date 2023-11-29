@@ -4,15 +4,18 @@ extends VehicleBody
 const STEER_SPEED = 1.5
 const STEER_LIMIT = 0.4
 
-export var engine_force_value = 700
+export var engine_force_value = 50
 
-var throttle = 150
+var throttle = 0
 var speed = 0
 var steer = 0
 var steer_target = 0
 
+var go = false
+var flat = false
 
-var aPilot = true
+
+var aPilot = false
 
 func _process(delta):
 	
@@ -26,11 +29,21 @@ func _physics_process(delta):
 	var fwd_mps = transform.basis.xform_inv(linear_velocity).x
 	#print(fwd_mps)
 	autoPilot()
+	
+
 	if aPilot:
-		steer_target = steer
+		steer_target =+ steer
 	else:
 		steer_target = Input.get_action_strength("ui_left") - Input.get_action_strength("ui_right")
 	
+	if Cowax.steer <= -1:
+		steer -= 0.5
+		Cowax.steer += 1
+		steer_target =+ steer
+	elif Cowax.steer >= 1:
+		steer += 0.5
+		Cowax.steer -= 1
+		steer_target =+ steer
 	steer_target *= STEER_LIMIT
 
 	if Input.is_action_pressed("ui_up"):
@@ -56,11 +69,16 @@ func _physics_process(delta):
 			brake = 1
 	else:
 		brake = 0.0
-
+	if Cowax.thc <= 0:
+		engine_force = 0
+	if flat:
+		engine_force = 0
+	if go:
+		engine_force = 0
 	steering = move_toward(steering, steer_target, STEER_SPEED * delta)
-
+	
 	#look_at(get_tree().get_current_scene().get_node("Generator").translation,Vector3.UP)
-
+	Cowax.speed = linear_velocity.length() * 2
 		
 	if $RayCast.is_colliding():
 		if $Reset.is_stopped():
@@ -88,9 +106,10 @@ func autoPilot():
 			aPilot = false
 			throttle = 0
 		else:
-			throttle = 150
+			throttle = 50
 			aPilot = true
 		print("AutoPilot: ",aPilot)
+	
 	steer = 0
 	if $Driver/Left1.is_colliding():
 		steer -= 0.5
@@ -106,7 +125,9 @@ func _on_Reset_timeout():
 
 
 func _on_Timer_timeout():
-	Cowax.consumeTHC()
+	if Cowax.thc > 0:
+		##Cowax.consumeTHC()
+		pass
 
 
 func _on_AudioStreamPlayer3D_finished():

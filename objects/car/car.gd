@@ -9,7 +9,7 @@ const STEER_LIMIT = 0.4
 
 export var engine_force_value = 100
 
-var throttle = 100
+var throttle = 20
 
 var steer = 0
 var steer_target = 0
@@ -22,6 +22,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if not get_tree().get_current_scene().get_node_or_null("Spatial"): return
 	if global_translation.distance_to(get_tree().get_current_scene().get_node("Spatial").get_node("Cbus").global_translation) > 1000:
 		queue_free()
 
